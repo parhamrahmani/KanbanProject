@@ -34,31 +34,22 @@ public class TaskEntity {
         this.task_owner = owner;
         this.board = board;
     }
-
     public String getTask_name() {
         return task_name;
     }
-
-    public void setTask_name(String name) {
-        this.task_name = name;
-    }
-
+    public void setTask_name(String name) {this.task_name = name;}
     public String getTask_description() {
         return task_description;
     }
-
     public void setTask_description(String description) {
         this.task_description = description;
     }
-
     public String getTask_status() {
         return task_status;
     }
-
     public void setTask_status(String status) {
         this.task_status = status;
     }
-
     public String getTask_owner() {
         return task_owner;
     }
@@ -68,7 +59,6 @@ public class TaskEntity {
     public Long getId() {
         return id;
     }
-
     public void setId(Long task_id) {
         this.id = task_id;
     }
