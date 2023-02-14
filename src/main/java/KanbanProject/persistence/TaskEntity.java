@@ -7,8 +7,8 @@ public class TaskEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "task_id", nullable = false)
-    private Long task_id;
+    @Column(name = "id", nullable = false)
+    private Long id;
 
     @Column(name = "task_name", nullable = false)
     private String task_name;
@@ -65,12 +65,12 @@ public class TaskEntity {
     public void setTask_owner(String owner) {
         this.task_owner = owner;
     }
-    public Long getTask_id() {
-        return task_id;
+    public Long getId() {
+        return id;
     }
 
-    public void setTask_id(Long task_id) {
-        this.task_id = task_id;
+    public void setId(Long task_id) {
+        this.id = task_id;
     }
     public BoardEntity getBoard() {
         return board;

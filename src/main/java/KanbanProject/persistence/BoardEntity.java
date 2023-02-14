@@ -9,8 +9,8 @@ public class BoardEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "board_id", nullable = false)
-    private long board_id;
+    @Column(name = "id", nullable = false)
+    private long id;
 
     @Column(name = "board_name", nullable = false)
     private String board_name;
@@ -33,11 +33,11 @@ public class BoardEntity {
 protected BoardEntity() {}
 
     public long getBoard_id() {
-        return board_id;
+        return id;
     }
 
     public void setBoard_id(long board_id) {
-        this.board_id = board_id;
+        this.id = board_id;
     }
 
     public String getBoard_name() {
