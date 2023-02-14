@@ -1,5 +1,7 @@
 package KanbanProject.web.api;
 
+import KanbanProject.persistence.BoardRepository;
+
 public class Task {
 private Long task_id;
     private String task_name;
@@ -7,6 +9,7 @@ private Long task_id;
     private String task_owner;
     private String task_status;
     private Long board_id;
+    private BoardRepository boardRepository;
 
     public Task(Long task_id, String task_name, String task_description, String task_owner, String task_status, Long board_id) {
         this.task_id = task_id;
@@ -52,5 +55,9 @@ private Long task_id;
     public void setBoard_id(Long board_id) {
         this.board_id = board_id;
     }
+  /*  public Board getBoard() {
+        boardRepository.findById(board_id);
+
+    }*/
 
 }
