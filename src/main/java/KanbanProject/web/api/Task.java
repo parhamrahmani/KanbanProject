@@ -55,9 +55,5 @@ private Long task_id;
     public void setBoard_id(Long board_id) {
         this.board_id = board_id;
     }
-  /*  public Board getBoard() {
-        boardRepository.findById(board_id);
-
-    }*/
 
 }

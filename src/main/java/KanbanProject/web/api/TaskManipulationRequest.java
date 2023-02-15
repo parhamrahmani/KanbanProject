@@ -8,7 +8,7 @@ public class TaskManipulationRequest {
     private Long board_id;
 
     public TaskManipulationRequest() {}
-    public TaskManipulationRequest( String task_name, String task_description, String task_owner, String task_status, Long board_id) {
+    public TaskManipulationRequest(String task_name, String task_description, String task_owner, String task_status, Long board_id) {
         this.task_name = task_name;
         this.task_description = task_description;
         this.task_owner = task_owner;
@@ -45,5 +45,4 @@ public class TaskManipulationRequest {
     public void setBoard_id(Long board_id) {
         this.board_id = board_id;
     }
-
 }
